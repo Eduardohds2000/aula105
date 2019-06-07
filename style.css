@@ -5,19 +5,44 @@ body{
                          'nav nav nav nav'
                          'section section aside aside'
                          'footer footer footer footer';
-    grid-template-rows: 2vh 60vh 20vh 50vh;
+    grid-template-rows: 2vh 70vh 20vh 50vh;
     
 }
 header{
+    /* mudanças na barrinha verde */
     grid-area: header;
-    background-color: black;
-    height: 400px;
-    background-image: url(img/banner.png);
+    background-color: #2ccd70;
 }
 nav{
+    /* mudaças em toda as imagens abaixo da barrinha*/
     grid-area: nav;
-    background-color: aqua;
+    display: flex;
+    background-image: url(img/banner.png);
+    background-size: 100%;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
 }
+
+div img{
+    /* mudanças na imagem do celular */
+    display: flex;
+    justify-content: flex-end;
+    height: 460px;
+    width: 400px;
+     
+}
+ div h1{
+    display: flex;
+    color: white; 
+    font-size: 28pt;     
+}
+div h2{
+    display: flex;
+    color: white; 
+    font-size: 20pt; 
+}
+
 section{
     grid-area: section;
     background-color: yellow;
